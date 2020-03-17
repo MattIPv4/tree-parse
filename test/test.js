@@ -1,12 +1,12 @@
 const { readFileSync } = require('fs');
 const { join } = require('path');
-const { parse } = require('../src');
+const { parse, files } = require('../src');
 const assert = require('assert').strict;
 
 const testFile = readFileSync(join(__dirname, 'test.txt')).toString('utf8');
-const res = parse(testFile);
+const resTree = parse(testFile);
 
-assert.deepEqual(res, {
+assert.deepEqual(resTree, {
     '.': {
         'README.md': {},
         'example.png': {},
@@ -23,3 +23,17 @@ assert.deepEqual(res, {
         'config.js': {},
     },
 });
+
+const resFiles = files(resTree);
+
+assert.deepEqual(resFiles, [
+    './README.md',
+    './example.png',
+    './index.js',
+    './package-lock.json',
+    './package.json',
+    './src/test/test.js',
+    './src/index.js',
+    './src/app.js',
+    './config.js',
+]);
