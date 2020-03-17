@@ -6,7 +6,7 @@
  * @returns {number} The directory level or how indented the line is in the tree.
  */
 const indent = line => {
-    return (line.match(new RegExp('[│├└]', 'g')) || []).length
+    return (line.match(new RegExp('[│├└]', 'g')) || []).length;
 };
 
 /**
@@ -17,7 +17,7 @@ const indent = line => {
  * @returns {string} The name of the file/directory on the line, stripped of any decoration or whitespace.
  */
 const name = line => {
-    return line.replace(new RegExp('^[│├└─\\s]*'), '').trim()
+    return line.replace(new RegExp('^[│├└─\\s]*'), '').trim();
 };
 
 /**
@@ -78,6 +78,9 @@ const parse = input => {
 
         // If we're less indented than previous, we're above the last parent
         if (thisIndent < lastIndent) {
+            // If we're at zero, we've reached the end of tree
+            if (thisIndent === 0) continue;
+
             parents.pop(); // Remove the last child of the parent we're not in
             parents.pop(); // Remove the parent we're not in
             store(tree, parents, thisName); // Store this in the tree

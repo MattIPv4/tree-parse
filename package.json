@@ -4,6 +4,9 @@
   "description": "A super simple package to parse the string output of the unix tree command into an object.",
   "license": "Apache-2.0",
   "main": "src/index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MattIPv4/tree-parse.git"
