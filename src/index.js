@@ -126,7 +126,7 @@ const files = (tree, parent = null) => {
     const entries = [];
 
     for (const child in tree) {
-        if (!tree.hasOwnProperty(child)) continue;
+        if (!Object.prototype.hasOwnProperty.call(tree, child)) continue;
 
         // If this is a file (empty object as val), simply store it
         if (!Object.keys(tree[child]).length) {

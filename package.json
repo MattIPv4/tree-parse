@@ -1,20 +1,22 @@
 {
-  "name": "tree-parse",
-  "version": "0.0.1",
-  "description": "A super simple package to parse the string output of the unix tree command into an object.",
-  "license": "Apache-2.0",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "node test/test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MattIPv4/tree-parse.git"
-  },
-  "keywords": [],
-  "author": "Matt (IPv4) Cowley",
-  "bugs": {
-    "url": "https://github.com/MattIPv4/tree-parse/issues"
-  },
-  "homepage": "https://github.com/MattIPv4/tree-parse#readme"
+    "name": "tree-parse",
+    "version": "0.0.1",
+    "description": "A super simple package to parse the string output of the unix tree command into an object.",
+    "license": "Apache-2.0",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "npm run test:eslint && npm run test:script",
+        "test:script": "node test/test.js",
+        "test:eslint": "eslint '**/*.js'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MattIPv4/tree-parse.git"
+    },
+    "keywords": [],
+    "author": "Matt (IPv4) Cowley",
+    "bugs": {
+        "url": "https://github.com/MattIPv4/tree-parse/issues"
+    },
+    "homepage": "https://github.com/MattIPv4/tree-parse#readme"
 }
