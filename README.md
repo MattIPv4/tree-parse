@@ -15,7 +15,7 @@ Use the `files` function to convert the output of the `tree` function into a sin
 ---
 
 ```javascript
-const { parse } = require('tree-parse/src');
+const { parse } = require('tree-parse');
 
 const demo = `
 .
@@ -53,7 +53,7 @@ console.log(tree);
 ```
 
 ```javascript
-const { parse, files } = require('tree-parse/src');
+const { parse, files } = require('tree-parse');
 
 const demo = `
 .

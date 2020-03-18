@@ -3,7 +3,7 @@
     "version": "0.0.2",
     "description": "A super simple package to parse the string output of the unix tree command into an object.",
     "license": "Apache-2.0",
-    "main": "src/index.js",
+    "main": "index.js",
     "scripts": {
         "test": "npm run test:eslint && npm run test:script",
         "test:script": "node test/test.js",
