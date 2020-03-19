@@ -4,11 +4,10 @@
 ├── index.js
 ├── package-lock.json
 ├── package.json
-├── src
-│   ├── test
-│   │   └── test.js
-│   ├── index.js
-│   └── app.js
-└── config.js
+└── src
+    ├── test
+    │   └── test.js
+    ├── index.js
+    └── app.js
 
-2 directories, 9 files
+2 directories, 8 files

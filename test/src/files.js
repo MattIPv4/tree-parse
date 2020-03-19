@@ -13,6 +13,5 @@ module.exports = () => {
         './src/test/test.js',
         './src/index.js',
         './src/app.js',
-        './config.js',
     ]);
 };

@@ -18,7 +18,6 @@ module.exports = () => {
                 'index.js': {},
                 'app.js': {},
             },
-            'config.js': {},
         },
     });
 };

@@ -6,7 +6,7 @@
  * @returns {number} The directory level or how indented the line is in the tree.
  */
 const indent = line => {
-    return (line.match(new RegExp('[│├└]', 'g')) || []).length;
+    return (line.match(new RegExp('(│|├|└|[ \u00A0]{4})', 'g')) || []).length;
 };
 
 /**
