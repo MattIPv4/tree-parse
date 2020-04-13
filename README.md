@@ -20,15 +20,17 @@ const { parse } = require('tree-parse');
 const demo = `
 .
 ├── README.md
-├── index.js
+├── example.png
+├── package-lock.json
+├── package.json
 ├── src
-│   ├── test
-│   │   └── test.js
-│   ├── index.js
-│   └── app.js
-└── config.js
+│   ├── app.js
+│   ├── util.js
+│   └── test
+│       └── test.js
+└── index.js
 
-2 directories, 9 files
+2 directories, 8 files
 `;
 
 const tree = parse(demo);
@@ -39,15 +41,17 @@ console.log(tree);
 {
     ".": {
         "README.md": {},
-        "index.js": {},
+        "example.png": {},
+        "package-lock.json": {},
+        "package.json": {},
         "src": {
+            "app.js": {},
+            "util.js": {},
             "test": {
                 "test.js": {}
-            },
-            "index.js": {},
-            "app.js": {}
+            }
         },
-        "config.js": {}
+        "index.js": {}
     }
 }
 ```
@@ -57,14 +61,18 @@ const { parse, files } = require('tree-parse');
 
 const demo = `
 .
+├── README.md
+├── example.png
+├── package-lock.json
+├── package.json
 ├── src
-│   ├── test
-│   │   └── test.js
-│   ├── index.js
-│   └── app.js
-└── config.js
+│   ├── app.js
+│   ├── util.js
+│   └── test
+│       └── test.js
+└── index.js
 
-2 directories, 9 files
+2 directories, 8 files
 `;
 
 const tree = parse(demo);
@@ -74,9 +82,13 @@ console.log(list);
 
 ```json
 [
-  "./src/test/test.js",
-  "./src/index.js",
-  "./src/app.js",
-  "./config.js"
+    "./README.md",
+    "./example.png",
+    "./package-lock.json",
+    "./package.json",
+    "./src/app.js",
+    "./src/util.js",
+    "./src/test/test.js",
+    "./index.js"
 ]
 ```
