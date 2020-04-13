@@ -7,11 +7,11 @@ module.exports = () => {
     assert.deepEqual(resFiles, [
         './README.md',
         './example.png',
-        './index.js',
         './package-lock.json',
         './package.json',
-        './src/test/test.js',
-        './src/index.js',
         './src/app.js',
+        './src/util.js',
+        './src/test/test.js',
+        './index.js',
     ]);
 };

@@ -82,7 +82,8 @@ const parse = input => {
             if (thisIndent === 0) continue;
 
             parents.pop(); // Remove the last child of the parent we're not in
-            parents.pop(); // Remove the parent we're not in
+            const indentChange = lastIndent - thisIndent;
+            parents.splice(parents.length - indentChange, indentChange); // Remove the parents we're not in
             store(tree, parents, thisName); // Store this in the tree
             parents.push(thisName); // Store this as the last parent/child
 

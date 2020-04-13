@@ -8,16 +8,16 @@ module.exports = () => {
         '.': {
             'README.md': {},
             'example.png': {},
-            'index.js': {},
             'package-lock.json': {},
             'package.json': {},
             'src': {
+                'app.js': {},
+                'util.js': {},
                 'test': {
                     'test.js': {},
                 },
-                'index.js': {},
-                'app.js': {},
             },
+            'index.js': {},
         },
     });
 };

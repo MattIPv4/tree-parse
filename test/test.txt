@@ -1,13 +1,13 @@
 .
 ├── README.md
 ├── example.png
-├── index.js
 ├── package-lock.json
 ├── package.json
-└── src
-    ├── test
-    │   └── test.js
-    ├── index.js
-    └── app.js
+├── src
+│   ├── app.js
+│   ├── util.js
+│   └── test
+│       └── test.js
+└── index.js
 
 2 directories, 8 files
