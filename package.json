@@ -18,5 +18,8 @@
     "bugs": {
         "url": "https://github.com/MattIPv4/tree-parse/issues"
     },
-    "homepage": "https://github.com/MattIPv4/tree-parse#readme"
+    "homepage": "https://github.com/MattIPv4/tree-parse#readme",
+    "devDependencies": {
+        "eslint": "^7.19.0"
+    }
 }
