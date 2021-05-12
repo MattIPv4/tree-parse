@@ -1,6 +1,6 @@
 {
     "name": "tree-parse",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "A super simple package to parse the string output of the unix tree command into an object.",
     "license": "Apache-2.0",
     "main": "index.js",
@@ -21,6 +21,6 @@
     },
     "homepage": "https://github.com/MattIPv4/tree-parse#readme",
     "devDependencies": {
-        "eslint": "^7.19.0"
+        "eslint": "^7.26.0"
     }
 }
