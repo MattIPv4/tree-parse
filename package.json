@@ -21,6 +21,6 @@
     },
     "homepage": "https://github.com/MattIPv4/tree-parse#readme",
     "devDependencies": {
-        "eslint": "^7.26.0"
+        "eslint": "^9.39.1"
     }
 }
